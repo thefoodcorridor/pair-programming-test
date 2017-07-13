@@ -1,6 +1,8 @@
 
 class Palindrome
   def self.palindrome(string)
-    return false
-	end
+	string = string.downcase
+    return true if string == string.reverse
+	false
+  end
 end
