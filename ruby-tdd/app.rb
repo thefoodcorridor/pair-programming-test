@@ -1,8 +1,9 @@
-
 class Palindrome
   def self.palindrome(string)
-	string = string.downcase
+    return false unless  string.class == String
+    string = string.downcase.strip
+    return false if string == ""
     return true if string == string.reverse
-	false
+	  false
   end
 end
